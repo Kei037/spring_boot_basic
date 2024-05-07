@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- inlining 사용 -->
+<h4>[[${list}]]</h4>
+<hr>
+<!-- 'th:' 속성 사용 -->
+<h4 th:text="${list}"></h4>
+</body>
+</html>

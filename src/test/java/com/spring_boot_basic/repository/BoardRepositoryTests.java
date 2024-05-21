@@ -25,7 +25,7 @@ public class BoardRepositoryTests {
             Board board = Board.builder()
                     .title("title...")
                     .content("content..." + i)
-                    .writer("uesr" + (i % 10))
+                    .writer("user" + (i % 10))
                     .build();
             Board result = boardRepository.save(board);
             log.info("BNO: " + result.getBno());
